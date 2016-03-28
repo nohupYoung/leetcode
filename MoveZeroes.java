@@ -1,14 +1,15 @@
 public class MoveZeroes {
-      public void moveZeroes(int[] nums) {
-    		int k=nums.length;
-    		for(int i=0;i<k;i++) {
-    			if (nums[i]==0) {
-    				for (int j=i;j<k-1;j++) {
-    					nums[j]=nums[j+1];
-    				}
-    				nums[k-1]=0;
-    				k--;
-    			}
-    		}
-      }
+    public void MoveZeroes(int[] nums) {
+        int pos=0;
+        for (int i=0;i<nums.length;i++) {
+            if (nums[i] != 0) {
+                nums[pos]=nums[i];
+                pos++;
+            }
+        }
+
+        for(int j=pos;j<nums.length;j++) {
+            nums[j] = 0;
+        }
+    }
 }
