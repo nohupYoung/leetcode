@@ -1,4 +1,4 @@
-public class productOfArrayExceptSelf {
+public class ProductOfArrayExceptSelf {
 	public int[] productExceptSelf(int[] nums) {
 		int[] prods = new int[nums.length];
 		int p=1;
