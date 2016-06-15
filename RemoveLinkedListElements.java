@@ -6,7 +6,7 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-public class Solution {
+public class RemoveLinkedListElements {
 	public ListNode removeElements(ListNode head, int val) {
         
 	}
